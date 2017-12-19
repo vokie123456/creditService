@@ -1,0 +1,12 @@
+{
+	"project":"creditService",
+	"version":"1.0.0",
+	"desc":"三方贷款服务",
+	"type":"light-1.0",
+	"plugins":["vue","less"],
+
+	"exclude":{
+		"uglify":["config.js"],
+		"packager":[]
+	}
+}

@@ -1,0 +1,203 @@
+/*----------------公共元素*/
+body{font-family:"Helvetica Neue", Arial, Helvetica, sans-serif; -webkit-touch-callout:none;-webkit-user-select:none; color:#333; background: #ffffff;}
+input{font-family:"Helvetica Neue", Arial, Helvetica, sans-serif;}
+a{text-decoration:none; color:#00aaff;}
+a,input{outline:none;}
+input:focus, input:hover{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-user-modify:read-write-plaintext-only;
+}
+a:focus{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0
+}
+fieldset,img {
+    border:0
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-style:normal;
+    font-weight:400
+}
+li {
+    list-style: none
+}
+caption,th {
+    text-align:left
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:400
+}
+/*----------------浮动*/
+.cm-clear {
+    zoom: 1;
+}
+.cm-left {
+    display: inline;
+    float: left;
+}
+.cm-right {
+    display: inline;
+    float: right;
+}
+
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix::before, .clearfix::after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+
+/*借贷列表样式*/
+.main {
+    width:6.9rem;
+    margin: 0 auto;
+    font-size: .36rem;
+}
+.top {
+    height: 1rem;
+    line-height: 1rem;
+    border-bottom: 1px solid #ebebeb;
+}
+.speed {
+    float: left;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+.strategy{
+    float: right;
+    width: 1.93rem;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    color: #fefefe;
+    border-radius: .3rem;
+    background: #fe824c;
+    margin-top: .2rem;
+}
+
+.listbox{
+    width:6.9rem;
+    height: 1.24rem;
+    padding: .4rem 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.listbox img{
+    width:1.24rem;
+    height: 1.24rem;
+    float: left;
+}
+.main_content{
+    float: left;
+    width: 4.26rem;
+    height: 1.24rem;
+    padding-left: .3rem;
+    box-sizing: border-box;
+}
+.main_content h3{
+    font-size: .32rem;
+}
+
+.main_content p{
+    font-size: .22rem;
+    height: .36rem;
+    line-height: .36rem;
+    color: #fe824c;
+}
+.main_content li{
+    float: left;
+    font-size: .22rem;
+    height: .36rem;
+    line-height: .36rem;
+    color:#7e8da6;
+    padding:0.02rem .2rem;
+    border-radius: .3rem;
+    margin-left: .1rem;
+    border:1px solid #7e8da6;
+}
+.main_content li:first-child{
+    margin-left: 0;
+}
+
+.go{
+    width:1.4rem;
+    height: 1.24rem;
+    float: right;
+}
+.go p{
+    width:1.4rem;
+    height: .54rem;
+    line-height: .54rem;
+    text-align: center;
+    border-radius: .3rem;
+    color:#ffffff;
+    background: #0b84f1;
+    font-size: .3rem;
+    margin: .35rem 0;
+}
+
+/*攻略列表样式*/
+.listmain{
+    width:100%;
+    margin: 0 auto;
+    font-size: 0;
+}
+.listmain img{
+    width: 100%;
+    font-size: 0;
+}
+
+/*攻略说明详情*/
+.main_doc{
+    width:6.9rem;
+    margin: 0 auto;
+    padding-top:.6rem;
+    padding-bottom: 1.2rem;
+}
+.main_doc h3{
+    font-weight: bold;
+    font-size: .38rem;
+    color:#121111;
+}
+
+.main_doc h4{
+    font-weight: bold;
+    font-size: .30rem;
+    color:#242424;
+    margin-top:.3rem;
+}
+.main_doc p{
+    color:#3e3e3e;
+    font-size: .3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <snippet id="header" />
+  <!-- build:css css/style.css -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--<link rel="stylesheet" href="css/index.css" />-->
+  <!-- endbuild -->
+
+  <title>第三方借贷服务</title>
+</head>
+<body>
+  <div id="main">
+    <!-- 服务商列表-->
+    <view id="creditService" home="true" />
+    <!-- 服务商列表介绍-->
+    <view id="listContent"/>
+    <!-- 服务商列表说明详情-->
+    <view id="listContentDetail"/>
+    <view id="listContentDetail2"/>
+    <view id="listContentDetail3"/>
+  </div>
+  <snippet id="footer" />
+  <script type="text/javascript" src="js/lib/light-1.2.min.js"></script>
+  <script type="text/javascript" src="js/lib/light-sdk-1.0.0.dev.js"></script>
+  <script type="text/javascript" src="js/lib/zepto.js"></script>
+  <script type="text/javascript" src="js/lib/fastclick.js"></script>
+  
+  <script type="text/javascript" src="config.js"></script>
+  <!-- build:js js/app.js -->
+  <script type="text/javascript" src="js/common/common.js"></script>
+  <!-- inject:view -->
+  <!-- endinject -->
+
+  <!-- endbuild -->
+
+  <script type="text/javascript">
+    $(function() {
+        FastClick.attach(document.body);
+    });
+    LightSDK.register({
+        cid:"8112734868606654"
+    });
+    Light.start();
+    Light.config.greeting = false;
+    (function (doc, win) {//rem字体初始化
+      var docEl = doc.documentElement,
+        resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+        recalc = function () {
+          var clientWidth = docEl.clientWidth;
+          if (!clientWidth) return;
+          docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';//750为设计稿的宽度。设置以后，1rem=100px(设计稿上的100px);          
+        };
+      if (!doc.addEventListener) return;
+      win.addEventListener(resizeEvt, recalc, false);
+      doc.addEventListener('DOMContentLoaded', recalc, false);
+      
+    })(document, window);
+  </script>
+</body>
+</html>
